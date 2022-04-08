@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class MyStackTest {
         @Test
-        public void given3NumbersWhenAddedToQueueShouldHaveLastAddedNode() {
+        public void given3NumbersWhenAddedToQueueShouldHaveFirstAddedNode() {
         MyNode<Integer> myThirdNode = new MyNode<>(70);
         MyNode<Integer> mySecondNode = new MyNode<>(30);
         MyNode<Integer> myFirstNode = new MyNode<>(56);

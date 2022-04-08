@@ -12,7 +12,7 @@ public class MyStack<K> {
     }
 
     public INode<K> deQueue() {
-        return myLinkedList.popLast();
+        return myLinkedList.pop();
     }
 
     public boolean isEmpty() {

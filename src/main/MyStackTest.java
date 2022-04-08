@@ -4,8 +4,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MyStackTest {
-    @Test
-    public void given3NumbersWhenAddedToQueueShouldHaveFirstAddedNode() {
+        @Test
+        public void given3NumbersWhenAddedToQueueShouldHaveLastAddedNode() {
         MyNode<Integer> myThirdNode = new MyNode<>(70);
         MyNode<Integer> mySecondNode = new MyNode<>(30);
         MyNode<Integer> myFirstNode = new MyNode<>(56);

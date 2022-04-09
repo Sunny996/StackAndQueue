@@ -1,12 +1,13 @@
 package main;
 
-public class MyStack<K> {
+public class MyQueue<K> {
     private final MyLinkedList<K> myLinkedList;
 
     public MyStack() {
         this.myLinkedList = new MyLinkedList();
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     public void enQueue(INode element) {
         myLinkedList.appendNode(element);
@@ -30,6 +31,10 @@ public class MyStack<K> {
     public void push(INode element) {
         myLinkedList.addNode(element);
 >>>>>>> UC3_CreatedQueueAndAddedElementsUsingAppend
+=======
+    public void push(INode element) {
+        myLinkedList.addNode(element);
+>>>>>>> UC4_DeletedElementsFromQueueUsingPop
     }
 
     public INode<K> peak() {

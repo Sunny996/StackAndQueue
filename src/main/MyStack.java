@@ -7,27 +7,21 @@ public class MyStack<K> {
         this.myLinkedList = new MyLinkedList();
     }
 
-    public void enQueue(INode element) {
-        myLinkedList.appendNode(element);
-    }
-
-    public INode<K> deQueue() {
-        return myLinkedList.pop();
-    }
-
-    public boolean isEmpty() {
-        return myLinkedList.size() == 0;
-    }
-
-    public int size() {
-        return myLinkedList.size();
-    }
-
-    public void printStack() {
-        myLinkedList.print();
+    public void push(INode element) {
+        myLinkedList.addNode(element);
     }
 
     public INode<K> peak() {
         return myLinkedList.getHead();
     }
+
+    public INode<K> pop() {
+        return myLinkedList.pop();
+    }
+
+    public void printStack() {
+        myLinkedList.print();
+    }
 }
+
+

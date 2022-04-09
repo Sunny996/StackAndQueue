@@ -1,6 +1,6 @@
 package main;
 
-public class MyQueue<K> {
+public class MyStack<K> {
     private final MyLinkedList<K> myLinkedList;
 
     public MyStack() {

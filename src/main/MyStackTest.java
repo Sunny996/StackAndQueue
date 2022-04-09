@@ -5,11 +5,12 @@ import org.junit.Test;
 
 public class MyStackTest {
     @Test
-    public void given3NumbersWhenAddedToQueueShouldHaveFirstAddedNode() {
-        MyNode<Integer> myThirdNode = new MyNode<>(70);
+    public void given3NumbersInStackWhenPoppedShouldMatchWithLastAddedNode() {
+        MyNode<Integer> myFirstNode = new MyNode<>(70);
         MyNode<Integer> mySecondNode = new MyNode<>(30);
-        MyNode<Integer> myFirstNode = new MyNode<>(56);
+        MyNode<Integer> myThirdNode = new MyNode<>(56);
         MyStack myStack = new MyStack();
+<<<<<<< HEAD
         myStack.enQueue(myFirstNode);
         myStack.enQueue(mySecondNode);
         myStack.enQueue(myThirdNode);
@@ -28,5 +29,27 @@ public class MyStackTest {
         myStack.enQueue(myThirdNode);
         INode<Integer> myNode=myStack.deQueue();
         Assert.assertEquals(myFirstNode,myNode);
+=======
+        myStack.push(myFirstNode);
+        myStack.push(mySecondNode);
+        myStack.push(myThirdNode);
+        INode<Integer> poppedNode = myStack.pop();
+        myStack.printStack();
+        Assert.assertEquals(myThirdNode, poppedNode);
+>>>>>>> UC3_CreatedQueueAndAddedElementsUsingAppend
+    }
+
+    @Test
+    public void given3NumbersWhenAddedToStackShouldHaveLastAddedNode() {
+        MyNode<Integer> myFirstNode = new MyNode<>(70);
+        MyNode<Integer> mySecondNode = new MyNode<>(30);
+        MyNode<Integer> myThirdNode = new MyNode<>(56);
+        MyStack myStack = new MyStack();
+        myStack.push(myFirstNode);
+        myStack.push(mySecondNode);
+        myStack.push(myThirdNode);
+        INode<Integer> myNode = myStack.peak();
+        myStack.printStack();
+        Assert.assertEquals(myThirdNode, myNode);
     }
 }
